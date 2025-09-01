@@ -9,7 +9,9 @@
 </head>
 <body>
     <h1>결과 페이지</h1>
+    <!--  주소창에 노출됨 -> 서버가 주지 않아도 쓸 수 있음 -->
     <p th:if="${message}" th:text="${message}"></p>
+    <!--  flashAttribute는 주소창에 노출되지 않는다 (세션) -->
     <p th:if="${message2}" th:text="${message2}"></p>
 </body>
 </html>
