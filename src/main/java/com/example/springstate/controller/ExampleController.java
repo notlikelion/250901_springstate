@@ -29,6 +29,12 @@ public class ExampleController {
         } else {
             model.addAttribute("message", data + "의 저장에 실패했습니다.");
         }
+//        return "result";
+        return "redirect:/result";
+    }
+
+    @GetMapping("/result")
+    public String result() {
         return "result";
     }
 }
